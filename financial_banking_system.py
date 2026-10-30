@@ -1,13 +1,4 @@
-"""
-Financial Banking Management System
-Educational demo using Python, Tkinter, and SQLite.
 
-Run:
-    python financial_banking_system.py
-
-This is a local educational simulator, NOT a production banking system.
-Admin setup: On first launch, choose "Create Admin" on the login screen.
-"""
 
 import hashlib
 import hmac
