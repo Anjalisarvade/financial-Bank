@@ -1,169 +1,127 @@
 # 🏦 Financial Banking Management System Using Python
 
-A desktop-based Financial Banking Management System developed using Python, Tkinter, and SQLite. This application allows users to register accounts, deposit money, withdraw money, transfer funds, and view transaction history through a graphical user interface.
+A desktop-based banking application developed using Python, Tkinter, and SQLite. This project allows users to manage customer accounts, deposits, withdrawals, fund transfers, and transaction history through a graphical user interface.
 
-## 📌 Project Information
+## 🛠️ Technologies Used
 
-- **Project Name:** Financial Banking Management System
-- **Language:** Python
+- **Programming Language:** Python
 - **Frontend:** Tkinter
 - **Database:** SQLite
 - **Database Connectivity:** sqlite3
-- **Platform:** Windows
-- **Project Type:** Desktop Application
+- **Password Security:** PBKDF2 password hashing
 
 ## ✨ Features
 
 ### 1. Customer Management
-- Register new customers.
-- Automatically generate unique account numbers.
-- Secure customer login.
-- View and update customer information.
-- Store customer details in an SQLite database.
+- Register new customer accounts.
+- Log in using email and password.
+- View account details.
+- Update personal information.
 
 ### 2. Banking Operations
-- Deposit money into an account.
-- Withdraw money from an account.
-- Transfer money between registered accounts.
-- Check the current account balance.
-- Prevent withdrawals exceeding the available balance.
+- Deposit money.
+- Withdraw money.
+- Transfer funds between accounts.
+- Check available account balance.
+- View total deposits and withdrawals.
 
 ### 3. Transaction Management
 - View transaction history.
-- Record deposits and withdrawals.
-- Record incoming and outgoing transfers.
-- Display transaction dates, amounts, descriptions, and reference numbers.
-- Search and filter transactions.
+- Search transactions.
+- Filter transactions by type.
+- View transaction dates, amounts, descriptions, and reference numbers.
 
 ### 4. Administrator Panel
 - Create the first administrator account.
-- Log in securely as an administrator.
-- View registered customer accounts.
-- Search customer records.
+- Log in to the administrator dashboard.
+- View customer account records.
+- Search customer information.
 - Activate or deactivate accounts.
-- View customer transaction histories.
-- View basic banking statistics.
+- View customer transaction history.
+- Monitor account balances and transaction summaries.
 
-### 5. Security and Validation
-- Password hashing.
-- Parameterized SQL queries.
-- Input validation.
-- Database transaction handling for fund transfers.
-- Error and success messages.
-- Account status verification.
+## 📦 Requirements
 
-## 🛠️ Technologies Used
+- Python 3.9 or newer recommended.
+- Tkinter.
+- SQLite.
+- Python's built-in sqlite3 module.
 
-| Technology | Purpose |
-|---|---|
-| Python | Application logic |
-| Tkinter | Graphical user interface |
-| SQLite | Database storage |
-| sqlite3 | Database connectivity |
-| hashlib | Password hashing |
-| secrets | Secure random value generation |
+No additional third-party Python packages are required.
 
-## 📂 Project Structure
+## 🚀 How to Install and Run
 
-```text
-FinancialBankingSystem/
-│
-├── financial_banking_system.py
-├── banking.db
-└── README.md
-```
+**Step 1:** Install Python on your computer.
 
-**Note:** The `banking.db` file is generated automatically when the application starts. It stores customer accounts, account balances, transaction history, and administrator information.
+**Step 2:** Save the Python source file as:
 
-## 💻 System Requirements
+`financial_banking_system.py`
 
-- Windows 10 or Windows 11.
-- Python 3.10 or later recommended.
-- Tkinter support in the Python installation.
-- No additional third-party Python packages are required.
+**Step 3:** Open Command Prompt or a terminal in the project folder.
 
-## 🚀 Installation and Execution
-
-### Step 1: Install Python
-
-Download Python from the official website:
-
-https://www.python.org/downloads/
-
-During installation on Windows, enable **Add Python to PATH**.
-
-### Step 2: Download the Project
-
-Download `financial_banking_system.py` and save it inside a folder named `FinancialBankingSystem`.
-
-### Step 3: Open the Project Folder
-
-Open the folder in Visual Studio Code or open Command Prompt and navigate to the project directory.
-
-```bash
-cd path\to\FinancialBankingSystem
-```
-
-Replace the example path with your actual project folder path.
-
-### Step 4: Verify Python Installation
-
-Run:
-
-```bash
-python --version
-```
-
-### Step 5: Run the Application
-
-Execute:
+**Step 4:** Run the following command:
 
 ```bash
 python financial_banking_system.py
 ```
 
-The Financial Banking Management System window should open.
+If you are using Windows, you can also try:
 
-## 🔐 Initial Administrator Setup
+```bash
+py financial_banking_system.py
+```
 
-1. Launch the application.
-2. Click **Create First Administrator**.
-3. Enter an administrator username containing at least three characters.
-4. Create a password containing at least ten characters.
-5. Confirm the password.
-6. Click **Create Administrator**.
-7. Log in through the Administrator Login screen.
+**Step 5:** When the application opens, select **Create First Administrator** to create your administrator account.
 
-The first administrator must be created before administrator login is possible.
+**Step 6:** Register a customer account or log in using your existing credentials.
 
-## 👤 Customer Registration
+**Step 7:** Explore the banking features through the graphical user interface.
 
-1. Open the application.
-2. Click **Create New Customer Account**.
-3. Enter your full name, email, phone number, address, and password.
-4. Confirm your password.
-5. Click **Register**.
-6. Save the generated account number.
-7. Return to the login screen and sign in.
+## 🗄️ Database Information
 
-A new customer account starts with a balance of ₹0.00.
-
-## 💰 How to Test Banking Operations
-
-### Deposit Money
-1. Log in as a customer.
-2. Click **Deposit Money**.
-3. Enter a positive amount.
-4. Confirm the transaction.
-5. Check the updated balance.
-
-### Withdraw Money
-1. Click **Withdraw Money**.
-2. Enter an amount within your available balance.
-3. Confirm the transaction.
-4. Check the updated balance.
-
-### Transfer Funds
-1.
+The application automatically creates a local SQLite database named:
 
 
+
+The database stores:
+- Customer information.
+- Account details.
+- Account balances.
+- Administrator credentials.
+- Transaction records.
+
+The database is created in the same folder as the Python script.
+
+## 📁 Project Structure
+
+```text
+Financial-Banking-Management-System/
+│
+├── financial_banking_system.py
+└── README.md
+```
+
+
+
+## 🔐 Security and Limitations
+
+- This project is intended for educational and demonstration purposes only.
+- It is not connected to any real bank.
+- Transactions update only the local demonstration database.
+- Do not use real banking credentials or real financial information.
+- This application is not intended for production banking operations.
+
+## 👩‍🎓 About the Developer
+
+**Anjali Sarvade**
+
+Financial Banking Management System developed using Python, Tkinter, and SQLite.
+
+**Contact Information:**
+
+- **Phone:** 8263079871
+- **Email:** sravadeanjali7@gmail.com
+
+---
+
+© 2026 Anjali Sarvade. All rights reserved.
